@@ -1,1 +1,11 @@
-/*# sourceMappingURL=style.css.map */
+:root {
+  --c-text: #fafafa;
+  --c-background: #050505;
+  --c-primary: #ff5900;
+  --c-secondary: #19191a;
+  --c-accent: #ff00af;
+}
+
+main {
+  color: var(--headong-color);
+}/*# sourceMappingURL=style.css.map */
