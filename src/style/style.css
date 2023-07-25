@@ -4,8 +4,16 @@
   --c-primary: #ff5900;
   --c-secondary: #19191a;
   --c-accent: #ff00af;
+  --s-border-radius: 6;
+  --s-gap-size: 6;
 }
 
-main {
-  color: var(--headong-color);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--c-background);
 }/*# sourceMappingURL=style.css.map */
