@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/background.png);
+}
+body nav {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 14.58%, rgba(5, 5, 5, 0.9) 97.22%);
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0;
+  font-weight: 800;
+}
+body nav div.text {
+  display: flex;
+  background-color: red;
+  flex-grow: 1;
+  align-items: center;
+}
+body nav div.text p {
+  margin-left: 15px;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+body nav div.anyad {
+  flex-grow: 16;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+}
+body nav div.button {
+  display: flex;
+  flex-grow: 1;
+  background-color: yellow;
+  align-items: center;
+  justify-content: center;
+}
+body nav div.button button {
+  color: #fafafa;
+  background-color: transparent;
+  border-color: #fafafa;
+  border-radius: 12px;
+  border-width: 2px;
+  padding: 10px 0 10px 0;
+}
+body nav div.button button:hover {
+  color: #ff00af;
+  border-color: #ff00af;
+}
+body nav ul {
+  text-align: center;
+  margin-top: 1%;
+  align-items: center;
+}
+body nav ul p {
+  color: #fafafa;
+}
+body nav ul a {
+  text-decoration: none;
+  color: #fafafa;
+  padding: 0 6px 0 6px;
+}
+body nav ul a:hover {
+  color: #ff00af;
+}
+body nav ul a:active {
+  color: #ff5900;
+}
+body .pages::-webkit-scrollbar {
+  display: none;
+}
+body .pages {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+body .pages .page {
+  height: 100%;
+  width: 100%;
+}
+body .pages .page:nth-child(even) {
+  background-color: #ca3f1c;
+}
+body .pages #hero_page {
+  height: 100vh;
+  display: flex;
+  color: #fafafa;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+body .pages #hero_page #title h1 {
+  font-size: 2.4em;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+body .pages #hero_page #title p {
+  font-size: 0.6em;
+  font-weight: 100;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+body .pages footer {
+  width: 100%;
+  height: 30%;
+  background-color: #2e4910;
+}/*# sourceMappingURL=style.css.map */
