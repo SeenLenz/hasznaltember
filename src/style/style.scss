@@ -85,12 +85,21 @@ nav {
 }
 
 body {
-  background-color: $c-background;
-  height: 100%;
-}
-div.pages {
-  div#hero_page {
-    background-image: url(kepek/background.png);
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/background.png);
+  
+  .pages::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pages {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    
+    #hero_page {
     height: 100vh;
     display: flex;
     color: $c-text;
@@ -98,9 +107,7 @@ div.pages {
     justify-content: space-around;
     text-align: center;
 
-    img {
-    }
-    div#title {
+    #title {
       h1 {
         font-size: 2.4em;
         font-weight: 900;
@@ -113,5 +120,18 @@ div.pages {
         text-transform: uppercase;
       }
     }
+      
+    .page {
+      height: 100%;
+      width: 100%;
+    }
+    .page:nth-child(even) {
+      background-color: #ca3f1c;
+    }
+  }
+  footer {
+    width: 100%;
+    height: 30%;
+    background-color: #2e4910;
   }
 }
