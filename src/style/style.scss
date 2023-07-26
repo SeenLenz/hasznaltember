@@ -1,20 +1,117 @@
-:root {
-  --c-text: #fafafa;
-  --c-background: #050505;
-  --c-primary: #ff5900;
-  --c-secondary: #19191a;
-  --c-accent: #ff00af;
+$c-text: #fafafa;
+$c-background: rgb(5, 5, 5);
+$c-primary: #ff5900;
+$c-secondary: #19191a;
+$c-accent: #ff00af;
 
-  --s-border-radius: 6;
-  --s-gap-size: 6;
-}
+$s-border-radius: 6;
+$s-gap-size: 6;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+nav {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 14.58%,
+    rgba($c-background, 0.9) 97.22%
+  );
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0;
+  font-weight: 800;
+  div.text {
+    display: flex;
+    background-color: red;
+    flex-grow: 1;
+    align-items: center;
+    p {
+      margin-left: 15px;
+      letter-spacing: 5px;
+      cursor: pointer;
+    }
+  }
+  div.anyad {
+    flex-grow: 16;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+  }
+  div.button {
+    display: flex;
+    flex-grow: 1;
+    background-color: yellow;
+    align-items: center;
+    justify-content: center;
+    button {
+      color: $c-text;
+      background-color: transparent;
+      border-color: $c-text;
+      border-radius: 12px;
+      border-width: 2px;
+      padding: 10px 0 10px 0;
+    }
+    button:hover {
+      color: $c-accent;
+      border-color: $c-accent;
+    }
+  }
+
+  ul {
+    text-align: center;
+    margin-top: 1%;
+    align-items: center;
+    p {
+      color: $c-text;
+    }
+    a {
+      text-decoration: none;
+      color: $c-text;
+      padding: 0 6px 0 6px;
+    }
+    a:hover {
+      color: $c-accent;
+    }
+    a:active {
+      color: $c-primary;
+    }
+  }
 }
 
 body {
-  background-color: var(--c-background);
+  background-color: $c-background;
+  height: 100%;
+}
+div.pages {
+  div#hero_page {
+    background-image: url(kepek/background.png);
+    height: 100vh;
+    display: flex;
+    color: $c-text;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    img {
+    }
+    div#title {
+      h1 {
+        font-size: 2.4em;
+        font-weight: 900;
+        letter-spacing: 3px;
+      }
+      p {
+        font-size: 0.6em;
+        font-weight: 100;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
