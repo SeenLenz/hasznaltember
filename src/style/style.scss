@@ -33,12 +33,93 @@ body {
       width: 100%;
     }
     .page:nth-child(even) {
-      background-color: #ca3f1c;
+      background-color: #d8d8d8;
     }
   }
   footer {
     width: 100%;
     height: 30%;
     background-color: #2e4910;
+  }
+  #projects {
+    position: relative;
+
+    .project-card {
+      position: absolute;
+      background-color: #ffffff;
+      border-radius: 12px;
+      height: 28.5%;
+      width: 25%;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+      transition: 1.5s;
+
+      #cardtext {
+        position: absolute;
+        top: 35%;
+        left: 75%;
+        font-size: 1vw;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+
+    .project-card:hover {
+      box-shadow: rgb(0, 0, 0, 0.35) 0px 20px 30px -10px;
+    }
+
+    #cardpicture {
+      position: absolute;
+      height: 28.5vh;
+      width: 15vw;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      background-size: 57vh;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      transition: 0.5s;
+      pointer-events: none;
+    }
+    #card1 {
+      top: 11%;
+      left: 18%;
+
+      .cardpicture1 {
+        background-image: url(../img/somalia.png);
+      }
+    }
+    #card2 {
+      top: 26%;
+      right: 18%;
+
+      .cardpicture2 {
+        background-image: url(../img/iraq.jpg);
+      }
+    }
+    #card3 {
+      bottom: 11%;
+      left: 22%;
+
+      .cardpicture3 {
+        background-image: url(../img/myanmar.png);
+      }
+    }
+  }
+  .expandedcard {
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    transition: 1.5s !important;
+  }
+  .disappearedcard {
+    left: 3000px !important;
+  }
+  .bigimage {
+    height: 100vh !important;
+    width: 45vw !important;
+    background-size: 100% !important;
+    transition: 0.5s !important;
   }
 }
