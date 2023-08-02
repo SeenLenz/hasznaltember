@@ -51,6 +51,7 @@ body #projects .project-card {
   width: 25%;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
   transition: 1.5s;
+  transition-delay: 1s;
 }
 body #projects .project-card #cardtext {
   position: absolute;
@@ -58,9 +59,12 @@ body #projects .project-card #cardtext {
   left: 75%;
   font-size: 1vw;
   font-family: Arial, Helvetica, sans-serif;
+  pointer-events: none;
+  transition: 1.5s;
+  transition-delay: 1s;
 }
 body #projects .project-card:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 30px -10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 30px -10px;
 }
 body #projects #cardpicture {
   position: absolute;
@@ -72,8 +76,22 @@ body #projects #cardpicture {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  transition: 0.5s;
+  transition: 1.5s;
+  transition-delay: 1s;
   pointer-events: none;
+}
+body #projects .expandedcardtext {
+  position: absolute;
+  top: 50%;
+  right: 12%;
+  width: 450px;
+  font-size: 1.2vw;
+  text-align: justify;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0);
+  pointer-events: none;
+  transition: 0.2s;
 }
 body #projects #card1 {
   top: 11%;
@@ -104,13 +122,30 @@ body .expandedcard {
   bottom: 0 !important;
   right: 0 !important;
   transition: 1.5s !important;
+  transition-delay: 0.1s !important;
 }
 body .disappearedcard {
   left: 3000px !important;
+  transition: 0.4s !important;
 }
 body .bigimage {
   height: 100vh !important;
   width: 45vw !important;
   background-size: 100% !important;
-  transition: 0.5s !important;
+  transition: 1.5s !important;
+  transition-delay: 0.1s !important;
+}
+body .bigcardtext {
+  font-size: 7vw !important;
+  color: #2e4910 !important;
+  transition: 1s !important;
+  top: 15% !important;
+  left: 58% !important;
+  transition: 1.5s !important;
+  transition-delay: 0.1s !important;
+}
+body .expandedcardtextcolor {
+  color: rgb(22, 21, 21) !important;
+  transition: 1s !important;
+  transition-delay: 1.6s !important;
 }/*# sourceMappingURL=style.css.map */

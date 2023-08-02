@@ -9,6 +9,12 @@ function ExpandCard(e) {
     e.target.classList.add("expandedcard");
     document.querySelectorAll("#cardpicture").forEach((e) => {
       e.classList.add("bigimage");
+      document.querySelectorAll("#cardtext").forEach((e) => {
+        e.classList.add("bigcardtext");
+        document.querySelectorAll(".expandedcardtext").forEach((e) => {
+          e.classList.add("expandedcardtextcolor");
+        });
+      });
     });
     document.querySelectorAll(".project-card").forEach((e) => {
       if (e.classList.contains("expandedcard") == false) {
@@ -22,6 +28,12 @@ function ExpandCard(e) {
     });
     document.querySelectorAll("#cardpicture").forEach((e) => {
       e.classList.remove("bigimage");
+      document.querySelectorAll("#cardtext").forEach((e) => {
+        e.classList.remove("bigcardtext");
+        document.querySelectorAll(".expandedcardtext").forEach((e) => {
+          e.classList.remove("expandedcardtextcolor");
+        });
+      });
     });
   }
 }
